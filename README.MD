@@ -11,12 +11,6 @@
 <img src="https://komarev.com/ghpvc/?username=xgino&color=blueviolet">
 </a>
 
-<img src="https://img.shields.io/badge/PDF-CV-red?style=flat-square&logo=adobe">
-
-<a href="https://www.linkedin.com/in/xgino/">
-    <img src="https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=linkedin">
-</a>
-
 <!-- <img src="https://img.shields.io/badge/-Email-red?style=flat-square&logo=gmail&logoColor=white"> -->
 
 <a href="https://www.discordapp.com/users/428446446153367554">

@@ -2,23 +2,13 @@
 <p align="center">
 
 <a href="https://github.com/xgino">
-    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=18&duration=2000&pause=100&multiline=true&width=450&height=80&lines=Ging+Ge+Li;Data+Science+%26+Ai+%7C+BASc+Student+%7C+Software+Developer;AI+%7C+Robotics+%7C+Deep+Learning" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=18&duration=2000&pause=100&multiline=true&width=450&height=80&lines=Gin;Data+Science+%26+Ai+%7C+BASc+Student+%7C+Software+Developer;AI+%7C+Robotics+%7C+Deep+Learning" alt="Typing SVG" />
 </a>
 
 </br>
 
 <a href="https://github.com/xgino">
 <img src="https://komarev.com/ghpvc/?username=xgino&color=blueviolet">
-</a>
-
-<a href="https://www.xgino.com">
-    <img src="https://img.shields.io/badge/Website-xgino.com-red?style=flat-square">
-</a>
-
-<img src="https://img.shields.io/badge/PDF-CV-red?style=flat-square&logo=adobe">
-
-<a href="https://www.linkedin.com/in/xgino/">
-    <img src="https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=linkedin">
 </a>
 
 <!-- <img src="https://img.shields.io/badge/-Email-red?style=flat-square&logo=gmail&logoColor=white"> -->

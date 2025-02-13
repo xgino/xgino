@@ -1,10 +1,10 @@
 <p align="center">
 
 <a href="https://github.com/xgino">
-    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=20&duration=2000&pause=1000&multiline=true&width=450&height=80&
+    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=18&duration=2000&pause=1000&multiline=true&width=450&height=80&
     lines=Hello%20Gin%20Here;
     Data%20Science%20%26%20Data%20Engineer%20%7C%20BASc%20Student;
-    Data%20scientist%20%7C%20Data%20Engineer%20%7C%20Software%20Developer" alt="Typing%20SVG" />
+    Data%20scientist%20%7C%20Data%20Engineer%20%7C%20Software%20Developer" alt="Typing SVG" />
 </a>
 
 </br>

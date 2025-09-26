@@ -1,8 +1,7 @@
-
 <p align="center">
 
 <a href="https://github.com/xgino">
-    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=18&duration=2000&pause=100&multiline=true&width=450&height=80&lines=Gin;Data+Science+%26+Ai+%7C+BASc+Student+%7C+Software+Developer;AI+%7C+Robotics+%7C+Deep+Learning" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=18&duration=2000&pause=1000&multiline=true&width=450&height=80&lines=Hello%20Gin%20Here;Data%20Science%20%26%20Data%20Engineer%20%7C%20BASc%20Student;Data%20scientist%20%7C%20Data%20Engineer%20%7C%20Software%20Developer" alt="Typing SVG" />
 </a>
 
 </br>
@@ -25,11 +24,6 @@
 
 <p align="center">
 
-
-<img src="https://img.shields.io/badge/pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white">
-
-<img src="https://img.shields.io/badge/numpy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white">
-
 <img src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat-square&logo=TensorFlow&logoColor=white">
 
 <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat-square&logo=scikit-learn&logoColor=white">
@@ -51,26 +45,27 @@
 
 </p>
 
+### 👨‍💻 About Me
+
+I am a **Data Science** and **Data Engineering** student with hands-on experience in data analytics, **model development**, and **pipeline automation**. I have successfully built and deployed several **Django** applications and am passionate about leveraging emerging technologies to optimize processes and drive efficiency. My goal is to combine my skills in data engineering and machine learning to solve real-world problems and build scalable, high-impact solutions.
+
+---
+
+### 🛠️ Technologies & Tools
+
+- **Languages:** Python, SQL, R
+- **Frameworks:** Django, Streamlit
+- **Databases:** PostgreSQL, MySQL, SQLite
+- **Tools:** Git, Docker, CI/CD pipelines, Apache Spark, Bash
+- **ML/AI:** Scikit-learn, TensorFlow
+- **Testing & Visualization:** pytest, Plotly
+
+
 ## 🌱 Currently Learning
-* 📖 Kaggle: Recommendation model building.
-  
-* 🎓 Goalie robot: Raspberry Pi 4, stepper motors. [Robotics project](https://github.com/xgino/Rofix)
-  
-* 💻 Goal: -
+* Developing mobile applications with Flutter
+* Integrating Machine Learning into mobile apps
+* Enhancing model performance and optimization on Kaggle
 
-## My currently project
-- [ ] Developing a deep learning model for plant analysis, identifying growth patterns and optimal conditions
-- [ ] Rofix project: Wiring adjustments for Raspberry Pi, microstepper driver, and stepper motor to enable basic spinning motor functionality
-
-## Future projects
-* Portfolio site:
-    - [ ] Update my portfolio website with Data science & ML mini projects and skills
-
-* Webdev: projects:
-    - [ ] Job listing website, where we retrive data with API or scraper and NLP/ML matching rec. algoritm
-    - [ ] Saas Landing page Boiler plate template with auth, google signin, redis cache, plotly, stripe, and more 
-* AI / ML projects:
-    - [ ] H&M Kaggle competitiion: User product recomendation on potential future purchase.
 
 
 ## 📈 GitHub Stats 

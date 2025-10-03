@@ -12,7 +12,7 @@
 
 <!-- <img src="https://img.shields.io/badge/-Email-red?style=flat-square&logo=gmail&logoColor=white"> -->
 
-<a href="https://www.discordapp.com/users/428446446153367554">
+<a href="https://www.discord.com/users/428446446153367554">
     <img src="https://img.shields.io/badge/-Discord-blue?style=flat-square&logo=discord&logoColor=white">
 </a>
 

@@ -4,16 +4,16 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 
 export const Hero = () => {
   const handleWhatsApp = () => {
-    window.open("https://wa.me/YOUR_PHONE_NUMBER", "_blank");
+    window.open("https://wa.me/31640828138", "_blank");
   };
 
   const handleEmail = () => {
-    window.location.href = "mailto:your.email@example.com";
+    window.location.href = "mailto:qingge43@gmail.com";
   };
 
   const handleDownloadCV = () => {
     // This will need to be updated with actual CV link
-    window.open("/cv.pdf", "_blank");
+    window.open("/Gin_CV_2025.pdf", "_blank");
   };
 
   return (
@@ -60,7 +60,7 @@ export const Hero = () => {
 
           <div className="flex gap-6 justify-center">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/xgino"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 transform"
@@ -69,7 +69,7 @@ export const Hero = () => {
               <Github className="h-7 w-7" />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/xgino"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors hover:scale-110 transform"

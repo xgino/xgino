@@ -9,23 +9,23 @@ export const Skills = () => {
     },
     {
       category: "Machine Learning & AI",
-      skills: ["scikit-learn", "PyTorch", "TensorFlow", "LangChain & LLMs", "OpenCV"],
+      skills: ["scikit-learn", "PyTorch", "TensorFlow", "Custom Model Development", "Fine-tuning Pre-trained Models", "LLM", "Prompt Engineering", "OpenCV", "NLP"],
     },
     {
       category: "Data Engineering & Infrastructure",
-      skills: ["Apache Kafka", "Apache Airflow", "Docker", "PySpark", "PostgreSQL", "MongoDB", "Redis"],
+      skills: ["Apache Airflow", "Docker", "Apache Spark", "ETL Pipelines", "Data Cleaning Pipelines", "ML Pipelines", "PostgreSQL", "MongoDB", "SQLite",],
     },
     {
       category: "MLOps & Development",
-      skills: ["MLflow", "FastAPI", "CI/CD", "AWS", "Azure", "AWS S3"],
+      skills: ["MLflow", "FastAPI", "Django", "CI/CD", "Web Hosting & Deployment"],
     },
     {
       category: "Data Processing & Analysis",
-      skills: ["Pandas & NumPy", "Great Expectations", "FAISS", "ChromaDB"],
+      skills: ["Pandas & NumPy", "Great Expectations", "Data Validation"],
     },
     {
       category: "Visualization & Dashboarding",
-      skills: ["Plotly & Dash", "Tableau", "Power BI", "Streamlit", "Grafana"],
+      skills: ["Streamlit", "Plotly"],
     },
   ];
 

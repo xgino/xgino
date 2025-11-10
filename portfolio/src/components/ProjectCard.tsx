@@ -10,7 +10,7 @@ interface ProjectCardProps {
   description: string;
   longDescription?: string;
   technologies: string[];
-  image?: string;
+  heroImage?: string;
   liveUrl?: string;
   githubUrl?: string;
   category: string;
@@ -22,7 +22,7 @@ export const ProjectCard = ({
   description,
   longDescription,
   technologies,
-  image,
+  heroImage,
   liveUrl,
   githubUrl,
   category,
@@ -31,8 +31,8 @@ export const ProjectCard = ({
   return (
     <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border-2">
       <div className="h-48 bg-gradient-to-br from-primary/10 to-accent/10 relative overflow-hidden">
-        {image && (
-          <img src={image} alt={title} className="w-full h-full object-cover" />
+        {heroImage && (
+          <img src={heroImage} alt={title} className="w-full h-full object-cover" />
         )}
         <div className="absolute top-4 left-4">
           <Badge variant="secondary" className="bg-card-glass">
@@ -76,7 +76,7 @@ export const ProjectCard = ({
           )}
           {longDescription && (
             <Button variant="default" size="sm" onClick={() => navigate(`/project/${id}`)}>
-              View Details
+              Case Study
             </Button>
           )}
         </div>

@@ -4,11 +4,11 @@ import { Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 
 export const Contact = () => {
   const handleWhatsApp = () => {
-    window.open("https://wa.me/YOUR_PHONE_NUMBER", "_blank");
+    window.open("https://wa.me/31640828138", "_blank");
   };
 
   const handleEmail = () => {
-    window.location.href = "mailto:your.email@example.com";
+    window.location.href = "mailto:qingge43@gmail.com";
   };
 
   return (
@@ -31,7 +31,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">WhatsApp</h3>
-                  <p className="text-sm text-muted-foreground">Quick response guaranteed</p>
+                  <p className="text-sm text-muted-foreground">Faster response</p>
                 </div>
                 <Button variant="outline" className="w-full">
                   Send Message
@@ -46,7 +46,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Email</h3>
-                  <p className="text-sm text-muted-foreground">your.email@example.com</p>
+                  <p className="text-sm text-muted-foreground">qingge43@gmail.com</p>
                 </div>
                 <Button variant="outline" className="w-full">
                   Send Email
@@ -57,7 +57,7 @@ export const Contact = () => {
 
           <div className="flex justify-center gap-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/xgino"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
@@ -68,7 +68,7 @@ export const Contact = () => {
               <span className="font-medium">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/xgino"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"

@@ -18,7 +18,7 @@ const Index = () => {
       </main>
       <footer className="py-8 bg-muted/30 text-center text-sm text-muted-foreground">
         <div className="container mx-auto px-4">
-          <p>&copy; {new Date().getFullYear()} Data Science Portfolio. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} xGino Portfolio. All rights reserved.</p>
         </div>
       </footer>
     </div>

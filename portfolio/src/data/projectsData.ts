@@ -18,7 +18,7 @@ export interface Project {
     path: string;
   }>;
   year: string;
-  projectType: "University Project" | "Personal Project" | "Research Project";
+  projectType: "University Project" | "Personal Project" | "Research Project" | "Hackathon";
   companyPartner?: string;
   duration?: string;
 }
@@ -211,6 +211,46 @@ export const projects: Project[] = [
     duration: "8 Weeks"
   },
 
+  // Google Maps Scraper
+  {
+    id: "gmaps-scraping-pipeline",
+    title: "Scalable Google Maps Scraping Pipeline",
+    description: "A high-performance scraping pipeline using Playwright, proxy rotation, and parallel processing.",
+    longDescription: "This was a pure data engineering challenge: how do you scrape a dynamic, protected site like Google Maps at scale? I built a Python pipeline using Playwright (for browser automation) and managed a pool of rotating proxies to avoid IP bans. The whole thing is built for scale, using parallel processing to run multiple scrapers at once. I even added features like browser cache clearing to manage RAM and a progress bar that can resume from a .txt file, just in case it gets interrupted.",
+    detailedContent: [
+      {
+        type: "text",
+        content: "Google Maps is a JavaScript-heavy site that actively blocks scrapers. The goal was to build a system that could bypass these defenses and pull large amounts of business data based on a list of keywords and locations."
+      },
+      {
+        type: "text",
+        content: "I used **Python** with **Playwright** for browser automation. The core of the system is built around **proxy rotation** to avoid getting blocked. To handle large jobs, I implemented **parallel processing** (multiprocessing) so multiple scrapers can run at once. I also added helper scripts, like one to auto-generate keyword lists (`country + locations + branches`) to feed the pipeline."
+      },
+      {
+        type: "text",
+        content: "I built a resilient pipeline that can handle large jobs. Key optimizations, like **clearing browser cache**, were critical for managing RAM usage during long runs. The 'resume from .txt' feature and individual progress bars make it a practical tool, not just a simple script."
+      }
+    ],
+    technologies: [
+      "Python", 
+      "Playwright", 
+      "Data Scraping", 
+      "Proxy Rotation", 
+      "Parallel Processing", 
+      "Data Engineering", 
+    ],
+    category: "Data Engineering",
+    liveUrl: "",
+    githubUrl: "https://github.com/xgino/Google-Map-Scaper",
+    heroImage: "/project-images/googlemaps-scraper/Gemini_Generated_Image_lxtypulxtypulxty.png",
+    galleryImages: [],
+    attachments: [],
+    year: "2024",
+    projectType: "Personal Project",
+    companyPartner: "",
+    duration: "2 Week"
+  },
+
   // Year 2: 2023-2024 2B
   {
     id: "2023-24-2B",
@@ -263,51 +303,51 @@ export const projects: Project[] = [
   },
 
   // Year 2: 2023-2024 2A
-  {
-    id: "2023-24-2A",
-    title: "AI in Education: A Mixed-Methods Research Study",
-    description: "A mixed-methods (Quantitative & Qualitative) research study analyzing the impact of AI on student learning, using R for statistical analysis.",
-    longDescription: "This project was a deep dive into academic research. It started with designing bias-free research questions to explore how AI tools *really* affect student learning at BUAS. I conducted a mixed-methods (Quantitative & Qualitative) study to get the full picture. The quantitative part involved data cleaning and outlier removal from academic performance datasets, which I then analyzed using R code for statistical tests. The qualitative data from interviews helped contextualize the numbers. This project was a rigorous, end-to-end research process, from study design to analyzing data and presenting findings for stakeholders.",
-    detailedContent: [
-      {
-        type: "text",
-        content: "This project started with the most critical step: designing the research questions. I focused on creating bias-free, measurable questions to guide the entire study. This led to a mixed-methods (Quantitative & Qualitative) approach to get a complete view of AI's impact at BUAS."
-      },
-      {
-        type: "text",
-        content: "For the quantitative analysis, I worked with student performance data. This required significant data cleaning, outlier removal, and preprocessing. I then used R to run statistical analyses, comparing outcomes (like exam performance and retention) between students who used AI-assisted methods versus traditional ones."
-      },
-      {
-        type: "text",
-        content: "The qualitative interviews provided context that the numbers couldn't. I synthesized both data types into a final research paper with visualizations (also built in R). The findings gave BUAS actionable, evidence-based insights on how AI is *actually* being used, helping them shape future policy."
-      }
-    ],
-    technologies: [
-      "R",
-      "Statistical Analysis",
-      "Data Cleaning",
-      "Outlier Removal",
-      "Quantitative Analysis",
-      "Qualitative Analysis",
-      "Research Design"
-    ],
-    category: "Data Science",
-    liveUrl: "",
-    githubUrl: "",
-    heroImage: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=600&fit=crop",
-    galleryImages: [
-      "/project-images/2023-24-2A/buas.jpg" 
-    ],
-    attachments: [
-      { 
-        name: "AI in Education - Final Research Paper (PDF)", 
-        path: "/project-images/2023-24-2A/research_proposal.pdf" 
-      },
-    ],
-    year: "2023-2024",
-    projectType: "Research Project",
-    duration: "8 Weeks"
-  },
+  // {
+  //   id: "2023-24-2A",
+  //   title: "AI in Education: A Mixed-Methods Research Study",
+  //   description: "A mixed-methods (Quantitative & Qualitative) research study analyzing the impact of AI on student learning, using R for statistical analysis.",
+  //   longDescription: "This project was a deep dive into academic research. It started with designing bias-free research questions to explore how AI tools *really* affect student learning at BUAS. I conducted a mixed-methods (Quantitative & Qualitative) study to get the full picture. The quantitative part involved data cleaning and outlier removal from academic performance datasets, which I then analyzed using R code for statistical tests. The qualitative data from interviews helped contextualize the numbers. This project was a rigorous, end-to-end research process, from study design to analyzing data and presenting findings for stakeholders.",
+  //   detailedContent: [
+  //     {
+  //       type: "text",
+  //       content: "This project started with the most critical step: designing the research questions. I focused on creating bias-free, measurable questions to guide the entire study. This led to a mixed-methods (Quantitative & Qualitative) approach to get a complete view of AI's impact at BUAS."
+  //     },
+  //     {
+  //       type: "text",
+  //       content: "For the quantitative analysis, I worked with student performance data. This required significant data cleaning, outlier removal, and preprocessing. I then used R to run statistical analyses, comparing outcomes (like exam performance and retention) between students who used AI-assisted methods versus traditional ones."
+  //     },
+  //     {
+  //       type: "text",
+  //       content: "The qualitative interviews provided context that the numbers couldn't. I synthesized both data types into a final research paper with visualizations (also built in R). The findings gave BUAS actionable, evidence-based insights on how AI is *actually* being used, helping them shape future policy."
+  //     }
+  //   ],
+  //   technologies: [
+  //     "R",
+  //     "Statistical Analysis",
+  //     "Data Cleaning",
+  //     "Outlier Removal",
+  //     "Quantitative Analysis",
+  //     "Qualitative Analysis",
+  //     "Research Design"
+  //   ],
+  //   category: "Data Science",
+  //   liveUrl: "",
+  //   githubUrl: "",
+  //   heroImage: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&h=600&fit=crop",
+  //   galleryImages: [
+  //     "/project-images/2023-24-2A/buas.jpg" 
+  //   ],
+  //   attachments: [
+  //     { 
+  //       name: "AI in Education - Final Research Paper (PDF)", 
+  //       path: "/project-images/2023-24-2A/research_proposal.pdf" 
+  //     },
+  //   ],
+  //   year: "2023-2024",
+  //   projectType: "Research Project",
+  //   duration: "8 Weeks"
+  // },
 
   // Year 1: 2022-2023 1D
   {
@@ -446,39 +486,155 @@ export const projects: Project[] = [
   },
 
   // Year 1: 2022-2023 1A
+  // {
+  //   id: "2022-23-1A",
+  //   title: "Business Data Analysis & Visualization",
+  //   description: "My first dive into BI, transforming raw CSV data into interactive Power BI dashboards that tell a clear business story.",
+  //   longDescription: "This project was my first real test of translating complex data into a simple, compelling story for a non-technical audience. Starting with messy CSVs, I used Power BI to build an end-to-end report. It wasn't just about DAX formulas; it was about learning *what* to show and *how* to show it. This experience was crucial for building my dashboarding skills, but more importantly, my ability to present data effectively.",
+  //   detailedContent: [
+  //     {
+  //       type: "text",
+  //       content: "The challenge: We had raw, unstructured business data in CSVs and Excel sheets. My goal was to move beyond just rows and columns to build an interactive dashboard that provided real business insights."
+  //     },
+  //     {
+  //       type: "text",
+  //       content: "My process involved data cleaning and transformation (light ETL) directly within Power BI. I built the data model, established relationships, and wrote DAX measures to create key performance indicators (KPIs). This was the technical foundation for the entire report."
+  //     },
+  //     {
+  //       type: "text",
+  //       content: "The final part was dashboard design and presentation. This is where I focused on 'data storytelling'—choosing the right visuals and arranging them to guide a user. Presenting the dashboard to peers was a huge learning curve in communication, justification, and focusing on the 'so what?' of the data."
+  //     }
+  //   ],
+  //   technologies: [
+  //     "Power BI",
+  //     "CSV",
+  //     "Data Visualization",
+  //     "Data Cleaning"
+  //   ],
+  //   category: "Data Science",
+  //   liveUrl: "",
+  //   githubUrl: "",
+  //   heroImage: "/project-images/2022-23-1A/hero.jpeg",
+  //   galleryImages: [],
+  //   attachments: [],
+  //   year: "2022-2023",
+  //   projectType: "University Project",
+  //   duration: "8 weeks"
+  // },
+
+  // Invoice Generator
   {
-    id: "2022-23-1A",
-    title: "Business Data Analysis & Visualization",
-    description: "My first dive into BI, transforming raw CSV data into interactive Power BI dashboards that tell a clear business story.",
-    longDescription: "This project was my first real test of translating complex data into a simple, compelling story for a non-technical audience. Starting with messy CSVs, I used Power BI to build an end-to-end report. It wasn't just about DAX formulas; it was about learning *what* to show and *how* to show it. This experience was crucial for building my dashboarding skills, but more importantly, my ability to present data effectively.",
+    id: "invoicor-js",
+    title: "Client-Side Invoice Generator",
+    description: "A free, privacy-first invoice generator built purely with client-side JavaScript.",
+    longDescription: "I wanted to build a practical tool that was fast, free, and respected user privacy. Invoicor.com is the result. It's a 100% client-side tool, meaning all data is processed in the user's browser—nothing is saved to a server. I built it with plain JavaScript, HTML, and CSS to keep it lightweight. This project was a great exercise in DOM manipulation and creating a useful utility without a complex backend.",
     detailedContent: [
       {
         type: "text",
-        content: "The challenge: We had raw, unstructured business data in CSVs and Excel sheets. My goal was to move beyond just rows and columns to build an interactive dashboard that provided real business insights."
+        content: "The challenge: create a simple invoice tool that doesn't require a sign-up or store any user data on a server. This makes it fast and completely private for freelancers or small businesses."
       },
       {
         type: "text",
-        content: "My process involved data cleaning and transformation (light ETL) directly within Power BI. I built the data model, established relationships, and wrote DAX measures to create key performance indicators (KPIs). This was the technical foundation for the entire report."
+        content: "I built this with vanilla JavaScript, HTML, and CSS. It's a 100% client-side application. The logic involves taking form inputs, calculating totals (like tax and discounts), and using JavaScript's DOM manipulation to generate a clean, printable invoice in real-time."
       },
       {
         type: "text",
-        content: "The final part was dashboard design and presentation. This is where I focused on 'data storytelling'—choosing the right visuals and arranging them to guide a user. Presenting the dashboard to peers was a huge learning curve in communication, justification, and focusing on the 'so what?' of the data."
+        content: "The result is a fast, free, and secure tool. It was a great project for focusing on core web development skills and understanding how to build a useful app without a backend."
       }
     ],
     technologies: [
-      "Power BI",
-      "CSV",
-      "Data Visualization",
-      "Data Cleaning"
+      "JavaScript", 
+      "HTML5", 
+      "CSS3", 
+      "DOM Manipulation"
     ],
-    category: "Data Science",
-    liveUrl: "",
-    githubUrl: "",
-    heroImage: "/project-images/2022-23-1A/hero.jpeg",
+    category: "Web Development",
+    liveUrl: "https://invoicor.com",
+    githubUrl: "https://github.com/xgino/invoice-generator",
+    heroImage: "/project-images/invoice-gen/Gemini_Generated_Image_pspu8tpspu8tpspu.png",
     galleryImages: [],
     attachments: [],
-    year: "2022-2023",
-    projectType: "University Project",
-    duration: "8 weeks"
+    year: "2025",
+    projectType: "Personal Project",
+    companyPartner: "",
+    duration: "1 Week"
   },
+
+  // QR Generator
+  {
+    id: "dynamic-qr-generator",
+    title: "Dynamic QR Code Generator & Analytics",
+    description: "A full-stack Django app that generates dynamic QR codes with scan tracking and analytics.",
+    longDescription: "I realized most free QR generators create static codes. If your link changes, your QR code is a dead piece of paper. I built this Django app to solve that. It generates a *dynamic* QR code that points to a redirect URL on my server (e.g., `/qr/my-link/`). You can log in and change the *final destination* URL anytime, and the physical QR code still works. As a bonus, because it passes through my server, I built in analytics to track scans (time, device, etc.).",
+    detailedContent: [
+      {
+        type: "text",
+        content: "Static QR codes are fragile. Businesses have to reprint all their marketing materials if a website link changes. This project creates 'dynamic' QR codes to solve this."
+      },
+      {
+        type: "text",
+        content: "I built this as a **full-stack Python** app using **Django**. When a user creates a QR code, it 1) generates a unique redirect URL (e.g., `/r/xyz123`), 2) saves the final destination URL in a **PostgreSQL** database, and 3) generates a QR code pointing to the redirect URL."
+      },
+      {
+        type: "text",
+        content: "The app provides a valuable business service. The best part is the analytics. Every time the redirect link is hit, I log the timestamp and user-agent. This gives users a dashboard to see how many people are scanning their codes, which is a huge improvement over a static QR."
+      }
+    ],
+    technologies: [
+      "Python", 
+      "Django", 
+      "SQLite", 
+      "SQL", 
+      "QR Code", 
+      "Full-Stack"
+    ],
+    category: "Web Development",
+    liveUrl: "https://qrdive.com",
+    githubUrl: "",
+    heroImage: "/project-images/qr-gen/Gemini_Generated_Image_ul6ut0ul6ut0ul6u.png",
+    galleryImages: [],
+    attachments: [],
+    year: "2024",
+    projectType: "Personal Project",
+    companyPartner: "",
+    duration: "6 Months"
+  },
+
+  // Game Dev Hackathon
+  {
+    id: "hackathon-school-wars",
+    title: "School Wars Remake (Supercell 48h Hackathon)",
+    description: "My first game, built in an 18-hour sprint for a 48-hour Supercell hackathon, turning a simple concept into a single-player game.",
+    longDescription: "This was a 48-hour Supercell hackathon and my first-ever attempt at game development. The goal was to remake 'School Wars'. I'll be honest, I hit a wall 10 hours in and lost motivation, but I pushed through and put in a solid 18-hour sprint.",
+    detailedContent: [
+      {
+        type: "text",
+        content: "The challenge was to remake a game, 'School Wars', in just 48 hours for a Supercell-sponsored hackathon. This was my very first time touching a game engine (I used Godot)."
+      },
+      {
+        type: "text",
+        content: "I spent the first few hours just learning the basics of Godot. I focused on the core logic: color-based territory capture, and win/loss conditions. I used simple basic shapes as units "
+      },
+      {
+        type: "text",
+        content: "Despite the steep learning curve and a mid-project motivation crash, I submitted a fully playable game.  This project wasn't about building perfect code; it was about rapid-prototyping, learning on the fly, and managing a high-pressure deadline."
+      }
+    ],
+    technologies: [
+      "Godot",
+      "Game Development", 
+      "Hackathon", 
+      "Rapid Prototyping"
+    ],
+    category: "Game Development",
+    liveUrl: "",
+    githubUrl: "https://github.com/xgino/StrongholdAI",
+    heroImage: "/project-images/stronghold/Gemini_Generated_Image_68kypx68kypx68ky.png",
+    galleryImages: [],
+    attachments: [],
+    year: "2025",
+    projectType: "Hackathon",
+    companyPartner: "Supercell",
+    duration: "48 Hours"
+  },  
 ];

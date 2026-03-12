@@ -560,46 +560,6 @@ export const projects: Project[] = [
     duration: "1 Week"
   },
 
-  // QR Generator
-  {
-    id: "dynamic-qr-generator",
-    title: "Dynamic QR Code Generator & Analytics",
-    description: "A full-stack Django app that generates dynamic QR codes with scan tracking and analytics.",
-    longDescription: "I realized most free QR generators create static codes. If your link changes, your QR code is a dead piece of paper. I built this Django app to solve that. It generates a *dynamic* QR code that points to a redirect URL on my server (e.g., `/qr/my-link/`). You can log in and change the *final destination* URL anytime, and the physical QR code still works. As a bonus, because it passes through my server, I built in analytics to track scans (time, device, etc.).",
-    detailedContent: [
-      {
-        type: "text",
-        content: "Static QR codes are fragile. Businesses have to reprint all their marketing materials if a website link changes. This project creates 'dynamic' QR codes to solve this."
-      },
-      {
-        type: "text",
-        content: "I built this as a **full-stack Python** app using **Django**. When a user creates a QR code, it 1) generates a unique redirect URL (e.g., `/r/xyz123`), 2) saves the final destination URL in a **PostgreSQL** database, and 3) generates a QR code pointing to the redirect URL."
-      },
-      {
-        type: "text",
-        content: "The app provides a valuable business service. The best part is the analytics. Every time the redirect link is hit, I log the timestamp and user-agent. This gives users a dashboard to see how many people are scanning their codes, which is a huge improvement over a static QR."
-      }
-    ],
-    technologies: [
-      "Python", 
-      "Django", 
-      "SQLite", 
-      "SQL", 
-      "QR Code", 
-      "Full-Stack"
-    ],
-    category: "Web Development",
-    liveUrl: "https://qrdive.com",
-    githubUrl: "",
-    heroImage: "/project-images/qr-gen/Gemini_Generated_Image_ul6ut0ul6ut0ul6u.png",
-    galleryImages: [],
-    attachments: [],
-    year: "2024",
-    projectType: "Personal Project",
-    companyPartner: "",
-    duration: "6 Months"
-  },
-
   // Game Dev Hackathon
   {
     id: "hackathon-school-wars",
